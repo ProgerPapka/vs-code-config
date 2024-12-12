@@ -170,7 +170,8 @@
   "settingsSync.ignoredSettings": [
     "editor.fontFamily",
     "apc.font.family",
-    "terminal.integrated.fontFamily"
+    "terminal.integrated.fontFamily",
+    "-window.zoomLevel"
   ],
   "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
   "terminal.integrated.fontSize": 14,
@@ -181,7 +182,7 @@
     "file:///c:/Users/ziatd/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
   ],
   "apc.electron": {},
-  "apc.font.family": "JetBrains Mono",
+  // "apc.font.family": "JetBrains Mono",
   "apc.statusBar": {
     "height": 28
   },
@@ -197,6 +198,7 @@
   },
   "window.newWindowDimensions": "inherit",
   "window.openFoldersInNewWindow": "off",
+  // "window.zoomLevel": 0.7,
   "update.mode": "manual",
   "database-client.autoSync": true,
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
