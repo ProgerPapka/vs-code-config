@@ -419,7 +419,11 @@
     "editor.fontFamily"
   ],
   // Custom VScode styles as electron appp
-  "animations.Install-Method": "Apc Customize UI++",
+  "animations.Install-Method": "Custom CSS and JS",
+  "vscode_custom_css.imports": [
+    "file:///Users/eldarziatdinov/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.4/dist/updateHandler.js",
+    "file:///c:/Users/ziatd/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
+  ],
   "apc.imports": [
     "file:///Users/eldarziatdinov/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.4/dist/updateHandler.js",
     "file:///c:/Users/ziatd/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
