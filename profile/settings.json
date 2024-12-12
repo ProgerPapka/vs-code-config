@@ -1,0 +1,472 @@
+{
+  // Editor
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "JetBrains Mono, Fira Code, MesloLGS NF, Consolas",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.6,
+  "editor.fontWeight": "200",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.guides.bracketPairs": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.guides.indentation": true,
+  "editor.linkedEditing": true,
+  "editor.wordWrap": "off",
+  "editor.showFoldingControls": "always",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "editor.tokenColorCustomizations": {
+    "[Default Dark Modern]": {
+      "keywords": "#c792ea",
+      "variables": "#eeffff",
+      "types": "#c3e88d",
+      "functions": "#82aaff",
+      "numbers": "#f78c6c",
+      "strings": "#c3e88d",
+      "comments": "#546e7a",
+      "textMateRules": [
+        // Source
+        {
+          "scope": [
+            "comment",
+            "keyword.control",
+            "storage.type.interface",
+            "storage.type.class",
+            "entity.name.type",
+            "entity.name.function"
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": ["meta.function-call", "entity.name.function.member"],
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": [
+            "constant.language.boolean",
+            "constant.language.null",
+            "constant.language.undefined",
+            "support.type.primitive",
+            "storage.type",
+            "storage.modifier",
+            "variable.language.this",
+            "variable.language.super",
+            "variable.language.null",
+            "variable.language.undefined",
+            "variable.language.void",
+            "keyword.operator.expression.instanceof",
+            "keyword.operator.expression.typeof",
+            "keyword.operator.expression.in",
+            "keyword.operator.expression.of",
+            "keyword.operator.new",
+            "keyword.operator.expression.import"
+          ],
+          "settings": {
+            "foreground": "#c792ea",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "variable.other.constant",
+            "variable.other.enummember",
+            "entity.name.type.enum"
+          ],
+          "settings": {
+            "foreground": "#eeffff"
+          }
+        },
+        {
+          "scope": ["punctuation.definition.", "meta.block"],
+          "settings": {
+            "foreground": "#88ddff"
+          }
+        },
+        {
+          "scope": ["meta.function-call", "entity.name.function.member"],
+          "settings": {
+            "foreground": "#82aaff"
+          }
+        },
+        {
+          "scope": [
+            "variable.other.readwrite",
+            "meta.import",
+            "function",
+            "entity.name.function",
+            "entity.name.function.ts",
+            "entity.name.function.tsx"
+          ],
+          "settings": {
+            "foreground": "#ffcb6b"
+          }
+        },
+        // Rexexp
+        {
+          "scope": [
+            "meta.group.regexp",
+            "keyword.operator.quantifier.regexp",
+            "constant.other.character-class.range.regexp"
+          ],
+          "settings": {
+            "foreground": "#c3e88d"
+          }
+        },
+        {
+          "scope": [
+            "punctuation.definition.group.no-capture.regexp",
+            "meta.assertion.negative-look-ahead.regexp",
+            "punctuation.definition.character-class.regexp"
+          ],
+          "settings": {
+            "foreground": "#88ddff"
+          }
+        },
+        {
+          "scope": ["constant.other.character-class.regexp"],
+          "settings": {
+            "foreground": "#f78c6c"
+          }
+        },
+        // Json
+        {
+          "scope": ["support.type.property-name.json"],
+          "settings": {
+            "foreground": "#c792e9"
+          }
+        },
+        {
+          "scope": ["constant.numeric.json", "constant.language.json"],
+          "settings": {
+            "foreground": "#f68b6c"
+          }
+        },
+        // Html/JSX/TSX
+        {
+          "scope": ["entity.name.tag", "support.class.component.tsx"],
+          "settings": {
+            "foreground": "#f07178"
+          }
+        },
+        {
+          "scope": [
+            "entity.other.attribute-name.html",
+            "entity.other.attribute-name.tsx",
+            "meta.tag.attributes.tsx"
+          ],
+          "settings": {
+            "foreground": "#feca6b"
+          }
+        },
+        {
+          "scope": [
+            "punctuation.separator.key-value.html",
+            "keyword.operator.assignment.tsx"
+          ],
+          "settings": {
+            "foreground": "#bce089"
+          }
+        },
+        {
+          "scope": [
+            "punctuation.definition.tag.begin.html",
+            "punctuation.definition.tag.end.html",
+            "punctuation.definition.tag.begin.tsx",
+            "punctuation.definition.tag.end.tsx",
+            "punctuation.section.embedded.begin.tsx",
+            "punctuation.section.embedded.end.tsx",
+            "punctuation.definition.template-expression.begin",
+            "punctuation.definition.template-expression.end"
+          ],
+          "settings": {
+            "foreground": "#88dcfe"
+          }
+        },
+        // CSS Less Scss
+        {
+          "scope": [
+            "entity.other.attribute-name.class.less",
+            "entity.other.attribute-name.parent.less",
+            "punctuation.definition.entity.less",
+            "entity.other.attribute-name.id.less",
+            "entity.other.attribute-name.class.scss",
+            "entity.other.attribute-name.parent.scss",
+            "punctuation.definition.entity.scss",
+            "entity.other.attribute-name.id.scss",
+            "entity.other.attribute-name.class.css",
+            "entity.other.attribute-name.parent.css",
+            "punctuation.definition.entity.css",
+            "entity.other.attribute-name.id.css"
+          ],
+          "settings": {
+            "foreground": "#ffcb6b",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "entity.other.attribute-name.pseudo-class.less",
+            "entity.other.attribute-name.pseudo-element.less",
+            "entity.other.attribute-name.pseudo-class.scss",
+            "entity.other.attribute-name.pseudo-element.scss",
+            "entity.other.attribute-name.pseudo-class.css",
+            "entity.other.attribute-name.pseudo-element.css",
+            "entity.other.attribute-name.id.less",
+            "entity.other.attribute-name.id.scss",
+            "entity.other.attribute-name.id.css",
+            "keyword.other.important.less",
+            "keyword.other.important.scss",
+            "keyword.other.important.css"
+          ],
+          "settings": {
+            "foreground": "#c792ea",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "support.type.property-name.less",
+            "support.type.property-name.scss",
+            "support.type.property-name.css"
+          ],
+          "settings": {
+            "foreground": "#b2ccd6"
+          }
+        },
+        {
+          "scope": [
+            "support.constant.property-value.less",
+            "constant.numeric.less",
+            "keyword.other.unit.less",
+            "support.constant.color.w3c-standard-color-name.less",
+            "meta.property-value.less",
+            "support.constant.property-value.scss",
+            "constant.numeric.scss",
+            "keyword.other.unit.scss",
+            "support.constant.color.w3c-standard-color-name.scss",
+            "meta.property-value.scss",
+            "support.constant.property-value.css",
+            "constant.numeric.css",
+            "keyword.other.unit.css",
+            "support.constant.color.w3c-standard-color-name.css",
+            "meta.property-value.css"
+          ],
+          "settings": {
+            "foreground": "#f78c6c"
+          }
+        },
+        {
+          "scope": [
+            "support.function.filter.less",
+            "support.function.filter.scss",
+            "support.function.filter.css"
+          ],
+          "settings": {
+            "foreground": "#82aaff"
+          }
+        },
+        {
+          "scope": [
+            "constant.other.color.rgb-value.less",
+            "punctuation.definition.constant.less",
+            "constant.other.color.rgb-value.scss",
+            "punctuation.definition.constant.scss",
+            "constant.other.color.rgb-value.css",
+            "punctuation.definition.constant.css"
+          ],
+          "settings": {
+            "foreground": "#84d6f7"
+          }
+        },
+        // Yaml
+        {
+          "scope": ["entity.name.tag.yaml", "entity.name.tag.yml"],
+          "settings": {
+            "foreground": "#c792ea"
+          }
+        },
+        {
+          "scope": [
+            "constant.language.merge.yaml",
+            "constant.language.merge.yml"
+          ],
+          "settings": {
+            "foreground": "#88ddff"
+          }
+        }
+      ]
+    }
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // Files
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    "*.md": "markdown"
+  },
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[proto3]": {
+    "editor.defaultFormatter": "zxh404.vscode-proto3"
+  },
+  "[makefile]": {
+    "editor.insertSpaces": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Breadcrumbs
+  "breadcrumbs.filePath": "on",
+  "breadcrumbs.symbolPath": "off",
+
+  // Chat
+  "chat.editor.fontSize": 14,
+
+  // Security
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // Explorer
+  "explorer.confirmPasteNative": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+
+  // Workbench
+  "workbench.sideBar.location": "right",
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false,
+  "workbench.list.openMode": "doubleClick",
+  "workbench.colorCustomizations": {
+    "[Default Dark Modern]": {}
+  },
+
+  // Icons
+  "material-icon-theme.hidesExplorerArrows": true,
+  "material-icon-theme.saturation": 1,
+  "material-icon-theme.folders.color": "#90a4ae",
+
+  // Terminal
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrains Mono, MesloLGS NF, Consolas",
+
+  // Database Client JDBC extensions
+  "database-client.autoSync": true,
+
+  // Kubernetes
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path-mac": "/Users/eldarziatdinov/.vs-kubernetes/tools/helm/darwin-arm64/helm"
+  },
+
+  // Extensions
+  "extensions.ignoreRecommendations": true,
+
+  // Sync
+  "settingsSync.ignoredSettings": ["editor.fontFamily"],
+
+  // Custom VScode styles as electron appp
+  "animations.Install-Method": "Apc Customize UI++",
+  "apc.imports": [
+    "file:///Users/eldarziatdinov/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.4/dist/updateHandler.js",
+    "file:///c:/Users/ziatd/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
+  ],
+  "apc.electron": {},
+  // "apc.font.family": "JetBrains Mono",
+  "apc.statusBar": {
+    "height": 28
+  },
+
+  // Vite
+  "vite.autoStart": false,
+  "vite.devCommand": "npm run dev",
+
+  // TailwindCSS
+  "tailwindCSS.rootFontSize": 13,
+
+  // Angular
+  "angular.view-engine": true,
+  "angular.enable-strict-mode-prompt": false,
+
+  // Go
+  "go.toolsManagement.autoUpdate": true,
+
+  // JSON
+  "json.schemas": [],
+
+  // Dart
+  "dart.debugSdkLibraries": true,
+  "dart.debugExternalPackageLibraries": true,
+
+  // Problems
+  "problems.decorations.enabled": true,
+
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "lldb.launch.expressions": "native",
+
+  // 
+  
+
+  // SCM
+  "scm.diffDecorationsGutterWidth": 5,
+
+  // Git
+  "git.confirmSync": false,
+  "git.suggestSmartCommit": false,
+  "git.openRepositoryInParentFolders": "always",
+  "gitlens.views.contributors.showStatistics": true,
+  "gitlens.views.contributors.showAllBranches": true,
+  "gitlens.advanced.messages": {
+    "suppressCreatePullRequestPrompt": true,
+    "suppressLineUncommittedWarning": true
+  },
+  "gitlens.views.commitDetails.files.layout": "tree",
+  "gitlens.graph.layout": "editor",
+  "gitlens.graph.minimap.additionalTypes": [],
+  "gitlens.graph.minimap.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "redhat.telemetry.enabled": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}
