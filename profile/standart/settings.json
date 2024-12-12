@@ -48,7 +48,10 @@
           }
         },
         {
-          "scope": ["meta.function-call", "entity.name.function.member"],
+          "scope": [
+            "meta.function-call",
+            "entity.name.function.member"
+          ],
           "settings": {
             "fontStyle": ""
           }
@@ -89,13 +92,19 @@
           }
         },
         {
-          "scope": ["punctuation.definition.", "meta.block"],
+          "scope": [
+            "punctuation.definition.",
+            "meta.block"
+          ],
           "settings": {
             "foreground": "#88ddff"
           }
         },
         {
-          "scope": ["meta.function-call", "entity.name.function.member"],
+          "scope": [
+            "meta.function-call",
+            "entity.name.function.member"
+          ],
           "settings": {
             "foreground": "#82aaff"
           }
@@ -135,27 +144,37 @@
           }
         },
         {
-          "scope": ["constant.other.character-class.regexp"],
+          "scope": [
+            "constant.other.character-class.regexp"
+          ],
           "settings": {
             "foreground": "#f78c6c"
           }
         },
         // Json
         {
-          "scope": ["support.type.property-name.json"],
+          "scope": [
+            "support.type.property-name.json"
+          ],
           "settings": {
             "foreground": "#c792e9"
           }
         },
         {
-          "scope": ["constant.numeric.json", "constant.language.json"],
+          "scope": [
+            "constant.numeric.json",
+            "constant.language.json"
+          ],
           "settings": {
             "foreground": "#f68b6c"
           }
         },
         // Html/JSX/TSX
         {
-          "scope": ["entity.name.tag", "support.class.component.tsx"],
+          "scope": [
+            "entity.name.tag",
+            "support.class.component.tsx"
+          ],
           "settings": {
             "foreground": "#f07178"
           }
@@ -292,7 +311,10 @@
         },
         // Yaml
         {
-          "scope": ["entity.name.tag.yaml", "entity.name.tag.yml"],
+          "scope": [
+            "entity.name.tag.yaml",
+            "entity.name.tag.yml"
+          ],
           "settings": {
             "foreground": "#c792ea"
           }
@@ -310,7 +332,6 @@
     }
   },
   "diffEditor.ignoreTrimWhitespace": false,
-
   // Files
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": true,
@@ -353,23 +374,20 @@
     "editor.insertSpaces": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   // Breadcrumbs
   "breadcrumbs.filePath": "on",
   "breadcrumbs.symbolPath": "off",
-
   // Chat
   "chat.editor.fontSize": 14,
-
   // Security
   "security.workspace.trust.untrustedFiles": "open",
-
   // Explorer
   "explorer.confirmPasteNative": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.compactFolders": false,
-
+  // Window
+  "window.zoomLevel": 0.7,
   // Workbench
   "workbench.sideBar.location": "right",
   "workbench.tree.indent": 16,
@@ -380,31 +398,26 @@
   "workbench.colorCustomizations": {
     "[Default Dark Modern]": {}
   },
-
   // Icons
   "material-icon-theme.hidesExplorerArrows": true,
   "material-icon-theme.saturation": 1,
   "material-icon-theme.folders.color": "#90a4ae",
-
   // Terminal
   "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontFamily": "JetBrains Mono, MesloLGS NF, Consolas",
-
   // Database Client JDBC extensions
   "database-client.autoSync": true,
-
   // Kubernetes
   "vs-kubernetes": {
     "vscode-kubernetes.helm-path-mac": "/Users/eldarziatdinov/.vs-kubernetes/tools/helm/darwin-arm64/helm"
   },
-
   // Extensions
   "extensions.ignoreRecommendations": true,
-
   // Sync
-  "settingsSync.ignoredSettings": ["editor.fontFamily"],
-
+  "settingsSync.ignoredSettings": [
+    "editor.fontFamily"
+  ],
   // Custom VScode styles as electron appp
   "animations.Install-Method": "Apc Customize UI++",
   "apc.imports": [
@@ -416,40 +429,28 @@
   "apc.statusBar": {
     "height": 28
   },
-
   // Vite
   "vite.autoStart": false,
   "vite.devCommand": "npm run dev",
-
   // TailwindCSS
   "tailwindCSS.rootFontSize": 13,
-
   // Angular
   "angular.view-engine": true,
   "angular.enable-strict-mode-prompt": false,
-
   // Go
   "go.toolsManagement.autoUpdate": true,
-
   // JSON
   "json.schemas": [],
-
   // Dart
   "dart.debugSdkLibraries": true,
   "dart.debugExternalPackageLibraries": true,
-
   // Problems
   "problems.decorations.enabled": true,
-
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "lldb.launch.expressions": "native",
-
   // 
-  
-
   // SCM
   "scm.diffDecorationsGutterWidth": 5,
-
   // Git
   "git.confirmSync": false,
   "git.suggestSmartCommit": false,
